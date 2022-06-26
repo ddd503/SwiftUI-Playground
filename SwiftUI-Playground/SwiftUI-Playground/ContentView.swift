@@ -25,12 +25,18 @@ struct ContentView: View {
             Text("SwiftUIの遊び場")
                 .font(.largeTitle)
                 .fontWeight(.bold)
-                .lineLimit(2, reservesSpace: true)
                 .multilineTextAlignment(.center)
                 .padding()
             Spacer()
-            List(Content.allCases, id: \Content.id) { content in
-                Text(content.title)
+            NavigationView {
+                List(Content.allCases, id: \Content.id) { content in
+                    switch content {
+                    case .stack:
+                        NavigationLink(destination: StackView()) {
+                            Text(content.title)
+                        }
+                    }
+                }
             }
         }
     }
