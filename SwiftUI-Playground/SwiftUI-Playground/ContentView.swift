@@ -11,10 +11,12 @@ enum Content: Int, Identifiable, CaseIterable {
     var id: Int { rawValue }
 
     case stack
+    case grid
 
     var title: String {
         switch self {
         case .stack: return "Stack"
+        case .grid: return "Grid"
         }
     }
 }
@@ -33,6 +35,10 @@ struct ContentView: View {
                     switch content {
                     case .stack:
                         NavigationLink(destination: StackView()) {
+                            Text(content.title)
+                        }
+                    case .grid:
+                        NavigationLink(destination: GridView()) {
                             Text(content.title)
                         }
                     }

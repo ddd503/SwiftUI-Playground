@@ -19,17 +19,17 @@ struct StackView: View {
             // 横並べ
             HStack(spacing: 10) {
                 ForEach(
-                    0...5,
+                    0...4,
                     id: \.self
                 ) {
-                    Text("Item \($0)")
+                    Text("HStack \($0)")
                 }
             }
             // 横並べをスクロールで表示されるまで生成しない形で
             ScrollView(.horizontal) {
                 LazyHStack(spacing: 10) {
                     ForEach(1...100, id: \.self) {
-                        Text("Column \($0)")
+                        Text("LazyHStack \($0)")
                     }
                 }
             }
@@ -42,17 +42,18 @@ struct StackView: View {
                            pinnedViews: .sectionHeaders) {
                     Section(header: Text("1から50").background(Color.red)) {
                         ForEach(1...50, id: \.self) {
-                            Text("Row \($0)")
+                            Text("LazyVStack \($0)")
                         }
                     }
                     Section(header: Text("51から100").background(Color.blue)) {
                         ForEach(51...100, id: \.self) {
-                            Text("Row \($0)")
+                            Text("LazyVStack \($0)")
                         }
                     }
                 }
             }.frame(height: 300)
             // Z軸で10ずつズラして100四方の正方形を配置
+            Text("ZStackで色並べ").padding(10)
             ZStack {
                 ForEach(
                     0..<colors.count,

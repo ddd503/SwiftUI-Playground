@@ -12,6 +12,7 @@
 		454874792865B152001F3C62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 454874782865B152001F3C62 /* Assets.xcassets */; };
 		4548747C2865B152001F3C62 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4548747B2865B152001F3C62 /* Preview Assets.xcassets */; };
 		454874832867E1BC001F3C62 /* StackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454874822867E1BC001F3C62 /* StackView.swift */; };
+		45487485286D24BF001F3C62 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45487484286D24BF001F3C62 /* GridView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		454874782865B152001F3C62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4548747B2865B152001F3C62 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		454874822867E1BC001F3C62 /* StackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackView.swift; sourceTree = "<group>"; };
+		45487484286D24BF001F3C62 /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 				454874742865B150001F3C62 /* SwiftUI_PlaygroundApp.swift */,
 				454874762865B150001F3C62 /* ContentView.swift */,
 				454874822867E1BC001F3C62 /* StackView.swift */,
+				45487484286D24BF001F3C62 /* GridView.swift */,
 				454874782865B152001F3C62 /* Assets.xcassets */,
 				4548747A2865B152001F3C62 /* Preview Content */,
 			);
@@ -142,6 +145,7 @@
 			files = (
 				454874772865B150001F3C62 /* ContentView.swift in Sources */,
 				454874752865B150001F3C62 /* SwiftUI_PlaygroundApp.swift in Sources */,
+				45487485286D24BF001F3C62 /* GridView.swift in Sources */,
 				454874832867E1BC001F3C62 /* StackView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
