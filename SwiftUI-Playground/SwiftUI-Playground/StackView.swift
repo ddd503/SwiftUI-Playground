@@ -38,9 +38,17 @@ struct StackView: View {
 
             // 縦並べをスクロールで表示されるまで生成しない形でScrollViewは基本.verticalらしい
             ScrollView {
-                LazyVStack(alignment: .leading) {
-                    ForEach(1...100, id: \.self) {
-                        Text("Row \($0)")
+                LazyVStack(alignment: .leading,
+                           pinnedViews: .sectionHeaders) {
+                    Section(header: Text("1から50").background(Color.red)) {
+                        ForEach(1...50, id: \.self) {
+                            Text("Row \($0)")
+                        }
+                    }
+                    Section(header: Text("51から100").background(Color.blue)) {
+                        ForEach(51...100, id: \.self) {
+                            Text("Row \($0)")
+                        }
                     }
                 }
             }.frame(height: 300)
