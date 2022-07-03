@@ -18,6 +18,11 @@ struct GridView: View {
                     ForEach(0..<2) { _ in Color.red }
                         .frame(width: 50, height: 50)
                 }
+                // 仕切り線をvertical方面だけにしてhorizontal方面には余分な仕切りが入らないようにする
+                Divider()
+                    .gridCellUnsizedAxes(.horizontal)
+                    .background(Color.red)
+
                 GridRow {
                     Text("GridRow 2")
                     ForEach(0..<6) { _ in Color.green }
@@ -35,8 +40,26 @@ struct GridView: View {
                         .gridCellColumns(2) // セル個数分配置方向にずらす（2つ分ずらす）
                 }
             }
+
+            ScrollView(.horizontal) {
+                // 横スクロールのグリッド表示、遅延作成版、1行ならStackViewで良いかも
+                LazyHGrid(rows: [GridItem(.fixed(60)), GridItem(.fixed(60))]) {
+                    ForEach(0x1f600...0x1f679, id: \.self) { value in
+                        VStack {
+                            Text("LazyHGrid")
+                            Text(emoji(value))
+                            .font(.largeTitle)
+                        }
+                    }
+                    .background(Color.blue)
+                }.frame(height: 150).background(Color.red)
+            }
             Spacer()
         }
+    }
+    private func emoji(_ value: Int) -> String {
+        guard let scalar = UnicodeScalar(value) else { return "?" }
+        return String(Character(scalar))
     }
 }
 
