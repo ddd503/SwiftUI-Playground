@@ -41,18 +41,35 @@ struct GridView: View {
                 }
             }
 
+            // 横スクロールのグリッド表示、遅延作成版、1行ならStackViewで良いかも
             ScrollView(.horizontal) {
-                // 横スクロールのグリッド表示、遅延作成版、1行ならStackViewで良いかも
                 LazyHGrid(rows: [GridItem(.fixed(60)), GridItem(.fixed(60))]) {
                     ForEach(0x1f600...0x1f679, id: \.self) { value in
                         VStack {
                             Text("LazyHGrid")
                             Text(emoji(value))
-                            .font(.largeTitle)
+                                .font(.largeTitle)
                         }
                     }
                     .background(Color.blue)
                 }.frame(height: 150).background(Color.red)
+            }
+
+            // 縦スクロールのグリッド表示、遅延作成版、単純なグリッドならGridViewの方が良い（縦横スペース指定できる）
+            ScrollView {
+                LazyVGrid(columns: [GridItem(.flexible()),
+                                    GridItem(.flexible()),
+                                    GridItem(.flexible())],
+                          alignment: .center,
+                          spacing: 1) {
+                    ForEach(0x1f600...0x1f679, id: \.self) { value in
+                        VStack {
+                            Text("LazyVGridLazyVGrid")
+                            Text(emoji(value))
+                                .font(.largeTitle)
+                        }
+                    }.frame(height: 100).background(Color.blue)
+                }.background(Color.red)
             }
             Spacer()
         }
