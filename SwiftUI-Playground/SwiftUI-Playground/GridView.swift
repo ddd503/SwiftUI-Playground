@@ -68,8 +68,24 @@ struct GridView: View {
                             Text(emoji(value))
                                 .font(.largeTitle)
                         }
-                    }.frame(height: 100).background(Color.blue)
+                    }.frame(height: 50).background(Color.blue)
                 }.background(Color.red)
+            }
+            ScrollView(.horizontal) {
+                LazyHGrid(rows: [
+                    GridItem(.flexible()),
+                    GridItem(.fixed(30), spacing: 10),
+                    GridItem(.fixed(100), spacing: 50),
+                    GridItem(.flexible())
+                ], spacing: 10) {
+                    ForEach(0...300, id: \.self) { _ in
+                        // GridItem１つ毎に1Objectが入る、4つ作らないとずれる
+                        Text("LazyHGrid").font(.caption)
+                        Color.green.frame(width: 30)
+                        Color.blue.frame(width: 30)
+                        Text("LazyHGrid").font(.caption)
+                    }
+                }
             }
             Spacer()
         }
