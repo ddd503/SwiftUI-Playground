@@ -13,12 +13,14 @@ enum Content: Int, Identifiable, CaseIterable {
     case stack
     case grid
     case layout
+    case gauge
 
     var title: String {
         switch self {
         case .stack: return "Stack"
         case .grid: return "Grid"
         case .layout: return "Layout"
+        case .gauge: return "Gauge"
         }
     }
 }
@@ -45,6 +47,10 @@ struct ContentView: View {
                         }
                     case .layout:
                         NavigationLink(destination: LayoutView()) {
+                            Text(content.title)
+                        }
+                    case .gauge:
+                        NavigationLink(destination: GaugeView()) {
                             Text(content.title)
                         }
                     }
