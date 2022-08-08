@@ -15,6 +15,7 @@ enum Content: Int, Identifiable, CaseIterable {
     case layout
     case gauge
     case datePicker
+    case barChart
 
     var title: String {
         switch self {
@@ -23,6 +24,7 @@ enum Content: Int, Identifiable, CaseIterable {
         case .layout: return "Layout"
         case .gauge: return "Gauge"
         case .datePicker: return "DatePicker"
+        case .barChart: return "BarChart"
         }
     }
 }
@@ -57,6 +59,10 @@ struct ContentView: View {
                         }
                     case .datePicker:
                         NavigationLink(destination: DatePickerView()) {
+                            Text(content.title)
+                        }
+                    case .barChart:
+                        NavigationLink(destination: BarChartView()) {
                             Text(content.title)
                         }
                     }

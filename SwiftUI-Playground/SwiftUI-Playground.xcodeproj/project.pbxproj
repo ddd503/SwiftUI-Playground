@@ -16,6 +16,7 @@
 		454874872894FA9A001F3C62 /* LayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454874862894FA99001F3C62 /* LayoutView.swift */; };
 		45487489289975C6001F3C62 /* GaugeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45487488289975C5001F3C62 /* GaugeView.swift */; };
 		45AD15EB28A0C80F002805E1 /* DatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AD15EA28A0C80F002805E1 /* DatePickerView.swift */; };
+		45AD15ED28A0F4D8002805E1 /* BarChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AD15EC28A0F4D8002805E1 /* BarChartView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		454874862894FA99001F3C62 /* LayoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutView.swift; sourceTree = "<group>"; };
 		45487488289975C5001F3C62 /* GaugeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaugeView.swift; sourceTree = "<group>"; };
 		45AD15EA28A0C80F002805E1 /* DatePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerView.swift; sourceTree = "<group>"; };
+		45AD15EC28A0F4D8002805E1 /* BarChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				454874862894FA99001F3C62 /* LayoutView.swift */,
 				45487488289975C5001F3C62 /* GaugeView.swift */,
 				45AD15EA28A0C80F002805E1 /* DatePickerView.swift */,
+				45AD15EC28A0F4D8002805E1 /* BarChartView.swift */,
 				454874782865B152001F3C62 /* Assets.xcassets */,
 				4548747A2865B152001F3C62 /* Preview Content */,
 			);
@@ -159,6 +162,7 @@
 				45AD15EB28A0C80F002805E1 /* DatePickerView.swift in Sources */,
 				45487489289975C6001F3C62 /* GaugeView.swift in Sources */,
 				454874832867E1BC001F3C62 /* StackView.swift in Sources */,
+				45AD15ED28A0F4D8002805E1 /* BarChartView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
