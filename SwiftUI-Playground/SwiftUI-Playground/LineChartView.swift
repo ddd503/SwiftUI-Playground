@@ -38,7 +38,7 @@ struct LineChartView: View {
                 .foregroundStyle(by: .value("User", "Aさん"))
             }
             ForEach(LineChartView.dataSet2) { dataPoint in
-                LineMark(
+                PointMark(
                     x: .value("Category", dataPoint.title),
                     y: .value("Value", dataPoint.value)
                 )
