@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		451B048728B0694D00211362 /* LineChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451B048628B0694D00211362 /* LineChartView.swift */; };
+		451B048928B8F58300211362 /* PasteButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451B048828B8F58300211362 /* PasteButtonView.swift */; };
 		454874752865B150001F3C62 /* SwiftUI_PlaygroundApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454874742865B150001F3C62 /* SwiftUI_PlaygroundApp.swift */; };
 		454874772865B150001F3C62 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454874762865B150001F3C62 /* ContentView.swift */; };
 		454874792865B152001F3C62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 454874782865B152001F3C62 /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		451B048628B0694D00211362 /* LineChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartView.swift; sourceTree = "<group>"; };
+		451B048828B8F58300211362 /* PasteButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasteButtonView.swift; sourceTree = "<group>"; };
 		454874712865B150001F3C62 /* SwiftUI-Playground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Playground.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		454874742865B150001F3C62 /* SwiftUI_PlaygroundApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_PlaygroundApp.swift; sourceTree = "<group>"; };
 		454874762865B150001F3C62 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 				45AD15EA28A0C80F002805E1 /* DatePickerView.swift */,
 				45AD15EC28A0F4D8002805E1 /* BarChartView.swift */,
 				451B048628B0694D00211362 /* LineChartView.swift */,
+				451B048828B8F58300211362 /* PasteButtonView.swift */,
 				454874782865B152001F3C62 /* Assets.xcassets */,
 				4548747A2865B152001F3C62 /* Preview Content */,
 			);
@@ -166,6 +169,7 @@
 				451B048728B0694D00211362 /* LineChartView.swift in Sources */,
 				45487489289975C6001F3C62 /* GaugeView.swift in Sources */,
 				454874832867E1BC001F3C62 /* StackView.swift in Sources */,
+				451B048928B8F58300211362 /* PasteButtonView.swift in Sources */,
 				45AD15ED28A0F4D8002805E1 /* BarChartView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
