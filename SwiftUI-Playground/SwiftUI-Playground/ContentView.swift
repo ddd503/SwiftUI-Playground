@@ -18,6 +18,7 @@ enum Content: Int, Identifiable, CaseIterable {
     case barChart
     case lineChart
     case pasteButton
+    case colorGradation
 
     var title: String {
         switch self {
@@ -29,6 +30,7 @@ enum Content: Int, Identifiable, CaseIterable {
         case .barChart: return "BarChart"
         case .lineChart: return "LineChart"
         case .pasteButton: return "PasteButton"
+        case .colorGradation: return "ColorGradation"
         }
     }
 }
@@ -75,6 +77,10 @@ struct ContentView: View {
                         }
                     case .pasteButton:
                         NavigationLink(destination: PasteButtonView()) {
+                            Text(content.title)
+                        }
+                    case .colorGradation:
+                        NavigationLink(destination: ColorGradationView()) {
                             Text(content.title)
                         }
                     }

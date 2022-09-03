@@ -19,6 +19,7 @@
 		45487489289975C6001F3C62 /* GaugeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45487488289975C5001F3C62 /* GaugeView.swift */; };
 		45AD15EB28A0C80F002805E1 /* DatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AD15EA28A0C80F002805E1 /* DatePickerView.swift */; };
 		45AD15ED28A0F4D8002805E1 /* BarChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AD15EC28A0F4D8002805E1 /* BarChartView.swift */; };
+		45F3628728C2EB6200C0F206 /* ColorGradationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F3628628C2EB6200C0F206 /* ColorGradationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		45487488289975C5001F3C62 /* GaugeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaugeView.swift; sourceTree = "<group>"; };
 		45AD15EA28A0C80F002805E1 /* DatePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerView.swift; sourceTree = "<group>"; };
 		45AD15EC28A0F4D8002805E1 /* BarChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartView.swift; sourceTree = "<group>"; };
+		45F3628628C2EB6200C0F206 /* ColorGradationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorGradationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 				45AD15EC28A0F4D8002805E1 /* BarChartView.swift */,
 				451B048628B0694D00211362 /* LineChartView.swift */,
 				451B048828B8F58300211362 /* PasteButtonView.swift */,
+				45F3628628C2EB6200C0F206 /* ColorGradationView.swift */,
 				454874782865B152001F3C62 /* Assets.xcassets */,
 				4548747A2865B152001F3C62 /* Preview Content */,
 			);
@@ -167,6 +170,7 @@
 				45487485286D24BF001F3C62 /* GridView.swift in Sources */,
 				45AD15EB28A0C80F002805E1 /* DatePickerView.swift in Sources */,
 				451B048728B0694D00211362 /* LineChartView.swift in Sources */,
+				45F3628728C2EB6200C0F206 /* ColorGradationView.swift in Sources */,
 				45487489289975C6001F3C62 /* GaugeView.swift in Sources */,
 				454874832867E1BC001F3C62 /* StackView.swift in Sources */,
 				451B048928B8F58300211362 /* PasteButtonView.swift in Sources */,
